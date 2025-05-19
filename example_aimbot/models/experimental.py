@@ -22,7 +22,7 @@ class Sum(nn.Module):
 
     def forward(self, x):
         y = x[0]  # no weight
-        if self.weight:
+        if self.weight:1000
             w = torch.sigmoid(self.w) * 2
             for i in self.iter:
                 y = y + x[i + 1] * w[i]
